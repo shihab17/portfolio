@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
 
 const Blog = () => {
     return (
-        <div>
-            <Navbar></Navbar>
+        <div className="d-flex justify-content-center p-3">
             <h3>Blog is coming soon...........</h3>
         </div>
     );

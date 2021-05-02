@@ -1,0 +1,10 @@
+.contact-input{
+    border: none;
+    border-bottom: 1px solid blanchedalmond;
+    border-radius: 0;
+    font-size: large;
+    font-weight: 700;
+}
+.contact-info{
+    border-right: 1px solid greenyellow ;
+}

@@ -16,7 +16,7 @@ const Navbar = () => {
               <Link className="nav-link p-3" to='/projects'>Projects</Link>
               <Link className="nav-link p-3" to='/blog'>Blog</Link>
               <Link className="nav-link p-3" to='/contact'>Contact</Link>
-              <a className="nav-link p-3" href='../../../file/Shihab_Ahmed_Efty_Resume.pdf' download>Download CV</a>
+              <a className="nav-link p-3 btn btn-success text-white" href='../../../file/Shihab_Ahmed_Efty_Resume.pdf' download>Download Resume</a>
             </div>
           </div>
         </div>
