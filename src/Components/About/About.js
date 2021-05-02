@@ -9,9 +9,9 @@ const About = () => {
                 <AboutHeader></AboutHeader>
             </div>
             <br/>
-            <div className="row">
+            {/* <div className="row">
                 <Skills></Skills>
-            </div>
+            </div> */}
         </div>
     );
 };

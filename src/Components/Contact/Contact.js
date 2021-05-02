@@ -41,7 +41,7 @@ const Contact = (props) => {
                                 <textarea className="form-control contact-input" name="contact-message" id="contact-message" rows="5" placeholder="Message"></textarea>
                             </div>
                             <div className="col-12">
-                                <button className="btn btn-lg btn-success">Send</button>
+                                <button className="btn btn-lg my-btn p-3 text-white"> Send</button>
                             </div>
                         </form>
                     </div>
