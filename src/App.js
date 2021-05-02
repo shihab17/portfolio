@@ -11,6 +11,9 @@ import Contact from './Components/Contact/Contact';
 import NoFound from './Components/Shared/NoFound/NoFound';
 import Blogs from './Components/Blogs/Blogs';
 import PFiveJS from './Components/Project/PFiveJS/PFiveJS';
+import Navbar from './Components/Shared/Navbar/Navbar';
+import SocialButtons from './Components/Shared/SocialButtons/SocialButtons';
+import Footer from './Components/Shared/Footer/Footer';
 function App() {
   return (
     <Router>
@@ -19,10 +22,15 @@ function App() {
           <Home></Home>
         </Route>
         <Route path='/about'>
+          <Navbar></Navbar>
+          <SocialButtons></SocialButtons>
           <About></About>
         </Route>
         <Route path='/projects'>
+          <Navbar></Navbar>
+          <SocialButtons></SocialButtons>
           <Projects></Projects>
+          <Footer></Footer>
         </Route>
         <Route path='/blog'>
           <Blogs></Blogs>

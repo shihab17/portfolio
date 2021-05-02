@@ -1,11 +1,17 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
-
+import AboutHeader from './AboutHeader/AboutHeader';
+import './About.css';
+import Skills from '../Skills/Skills';
 const About = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <h3>Hi, I am Shihab Ahmed Efty</h3>
+            <div className="row">
+                <AboutHeader></AboutHeader>
+            </div>
+            <br/>
+            <div className="row">
+                <Skills></Skills>
+            </div>
         </div>
     );
 };

@@ -1,0 +1,23 @@
+
+.project-card{
+    overflow: hidden;
+    background-image: linear-gradient(45deg,rgb(7, 143, 7),rgba(157, 221, 74, 0.726));
+    font-size: large;
+}
+.project-card :hover{
+    transform: skew(10deg);
+    transition: transform 1s;
+}
+.project-image:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+.my-btn {
+    background-image: linear-gradient(45deg,rgb(7, 143, 7),rgba(157, 221, 74, 0.726));
+    border-radius: 20px; 
+    font-size: large;
+}
+.my-btn:hover{
+    transform: scale(1.05);
+    transition: transform 2s;
+}
