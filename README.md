@@ -1,10 +1,6 @@
-# Online Book Store
+# Shihab Ahmed Efty
+# Live Site: https://shihab-ahmed-efty.web.app/
 
-# Live Site: 
-
-# Features 
-
- - 
 
 # Technology Used: 
   
