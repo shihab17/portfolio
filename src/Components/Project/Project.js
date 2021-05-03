@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Project.css'
-const Project = ({ project }) => {
-    const {img,title,description,source,live} = project;
+const Project = (props) => {
+    const {img,title,description,source,live} = props.project;
     // console.log("image url",project.img.cakeImg)
+    
     return (
         <div className="d-flex justify-content-center col-md-4 p-4 project">
             <div className="card w-100 shadow-lg text-center project-card ">
                 <img className="card-img-top p-2 project-image" src={img} alt="image" />
                 <div className="card-body rounded text-white">
-                    <h3 className="card-title"><a className="text-decoration-none text-white" href={live} target="_blank" rel="noopener noreferrer">{title}</a></h3>
+                    <h3 className="card-title"><span onClick={() => props.handleTitle(props.project)} className="text-decoration-none text-white"  >{title}</span></h3>
                     <p className="card-body">{description}</p>
                 </div>
                 <div className="row p-2">

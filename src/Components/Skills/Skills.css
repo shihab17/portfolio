@@ -1,0 +1,9 @@
+.skill-body{
+    background-image: linear-gradient(10deg,#078f07,rgba(157, 221, 74, 0.726));
+}
+.skill-logos:hover{
+    transform: skew(-2deg);
+}
+.skill-logo:hover{
+    transform: scale(2);
+}

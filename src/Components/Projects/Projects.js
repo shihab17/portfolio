@@ -4,7 +4,7 @@ import Project from '../Project/Project';
 import Footer from '../Shared/Footer/Footer';
 import SocialButtons from '../Shared/SocialButtons/SocialButtons';
 import './Projects.css'
-const Projects = () => {
+const Projects = ({handleTitle}) => {
     const projects = [
         {
             id:1,
@@ -26,7 +26,7 @@ const Projects = () => {
             id:3,
             img: 'https://i.ibb.co/P4ygmS2/dhaka-rider.png',
             title: 'Dhaka Rider App',
-            description: '',
+            description: 'This is a riding app. Where users can choose from bike, train, bus, car for the ride. Also you have more option so on ....',
             live: 'https://dhaka-riders-70e04.web.app/',
             source: 'https://github.com/shihab17/dhaka-rider-app'
         },
@@ -34,9 +34,18 @@ const Projects = () => {
             id:4,
             img: 'https://i.ibb.co/c854mm5/league.png',
             title: 'All Star League',
-            description: '',
+            description: 'It is an all football league detail. Where Users can explore any football details. ',
             live: 'https://distracted-roentgen-033ee6.netlify.app/',
             source: 'https://github.com/shihab17/all-star-league'
+        }
+        ,
+        {
+            id:5,
+            img: 'https://i.ibb.co/T2RQ97Q/bus-ticket.png',
+            title: 'Bus Ticket Booking',
+            description: 'This is an Online Bus ticket booking app. Where user can booking ticket. And also more option are so on... ',
+            live: 'https://priceless-curran-90cfb4.netlify.app/',
+            source: 'https://github.com/shihab17/bus-ticket-react'
         }
 
     ]
@@ -44,10 +53,10 @@ const Projects = () => {
     return (
         <div className="">
             
-            <h3 className="text-center p-2 text-success projects-title"><em>Here is my all projects</em></h3>
+            <h1 className="text-center p-2 text-success projects-title"><em>Here is my all projects</em></h1>
             <div className="d-flex justify-content-center row p-5">
                 {
-                    projects.map(project => <Project key={project.id} project={project}></Project> )
+                    projects.map(project => <Project key={project.id} project={project} handleTitle={handleTitle}></Project> )
                 }
             </div>
             
