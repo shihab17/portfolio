@@ -1,3 +1,6 @@
+import { faFileCode } from '@fortawesome/free-regular-svg-icons';
+import { faBlog, faDownload, faIdCard, faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
@@ -11,12 +14,12 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ms-auto ">
-              <Link className="nav-link p-3 text-white" aria-current="page" to='/'>Home</Link>
-              <Link className="nav-link p-3 text-white" to='/about'>About</Link>
-              <Link className="nav-link p-3 text-white" to='/projects'>Projects</Link>
-              <Link className="nav-link p-3 text-white" to='/blog'>Blog</Link>
-              <Link className="nav-link p-3 text-white" to='/contact'>Contact</Link>
-              <a className="nav-link p-3 my-btn text-white" href='../../../file/Shihab_Ahmed_Efty_Resume.pdf' download>Download Resume</a>
+              <Link className=" p-3 my-nav-link" aria-current="page" to='/'>Home</Link>
+              <Link className="p-3 my-nav-link" to='/about'> <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> About</Link>
+              <Link className=" p-3 my-nav-link" to='/projects'> <FontAwesomeIcon icon={faFileCode}></FontAwesomeIcon> Projects</Link>
+              <Link className=" p-3 my-nav-link" to='/blog'> <FontAwesomeIcon icon={faBlog}></FontAwesomeIcon> Blog</Link>
+              <Link className="p-3 my-nav-link" to='/contact'> <FontAwesomeIcon icon={faIdCard}></FontAwesomeIcon> Contact</Link>
+              <a className=" p-3 my-resume-btn text-white text-decoration-none" href='../../../file/Shihab_Ahmed_Efty_Resume.pdf' download> <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download Resume</a>
             </div>
           </div>
         </div>

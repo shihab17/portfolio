@@ -1,11 +1,19 @@
-.my-btn {
-    background-image: linear-gradient(45deg,#078f07,rgba(157, 221, 74, 0.726));
+.my-resume-btn {
+    /* background-image: linear-gradient(45deg,#078f07,rgba(157, 221, 74, 0.726)); */
+    /* background-image: linear-gradient(45deg,#14A76C,); */
+    background-color: #14A76C;
     border-radius: 20px; 
 }
-.my-btn:hover{
+.my-resume-btn:hover{
     transform: scale(1.05);
     transition: transform 2s;
 }
 .my-navbar{
-    background-image: linear-gradient(-45deg,#078f07,rgba(157, 221, 74, 0.726));
+    /* background-image: linear-gradient(-45deg,#078f07,rgba(157, 221, 74, 0.726)); */
+    /* background-image: linear-gradient(-45deg,#272727,#747474); */
+    background-color: #272727;
+}
+.my-nav-link{
+    color: #FFE400;
+    text-decoration: none;
 }

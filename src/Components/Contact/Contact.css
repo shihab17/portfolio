@@ -9,5 +9,9 @@
     border-right: 1px solid greenyellow ;
 }
 .my-bg{
-    background-image: linear-gradient(-12deg,rgb(7, 143, 7),rgba(157, 221, 74, 0.726));
+    /* background-image: linear-gradient(-12deg,rgb(7, 143, 7),rgba(157, 221, 74, 0.726)); */
+    /* background-color: #14A76C; */
+}
+.my-color{
+    color: #747474;
 }

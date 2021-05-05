@@ -53,7 +53,7 @@ const Projects = ({handleTitle}) => {
     return (
         <div className="">
             
-            <h1 className="text-center p-2 text-success projects-title"><em>Here is my all projects</em></h1>
+            <h1 className="text-center p-2 projects-title"><em>Here is my all projects</em></h1>
             <div className="d-flex justify-content-center row p-5">
                 {
                     projects.map(project => <Project key={project.id} project={project} handleTitle={handleTitle}></Project> )

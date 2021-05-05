@@ -1,11 +1,56 @@
-.about-header{
+.about-header {
     height: 400px;
     width: 100%;
-    padding:5%;
+    padding: 5%;
+    background-image: url('https://pa1.narvii.com/7407/3c1f595cd4dbc27edf08e74548d48158a747d205r1-444-480_hq.gif');
+    /* opacity: 0.75; */
+    /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://pa1.narvii.com/7407/3c1f595cd4dbc27edf08e74548d48158a747d205r1-444-480_hq.gif"); */
+    background-repeat: repeat-y;
+    background-position: right;
 }
-.hello{
+
+.hello {
     color: #078f07;
 }
-.name{
+.tools-heading{
+  /* color:#14A76C; */
+  color: #FFE400;
+}
+.name-animation {
     color: cornflowerblue;
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, cornflowerblue, rgb(51, 211, 65));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.hello-animation {
+    color: cornflowerblue;
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(-90deg, cornflowerblue, rgb(51, 211, 65));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }

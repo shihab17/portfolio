@@ -4,12 +4,12 @@ import './About.css';
 import Skills from '../Skills/Skills';
 const About = () => {
     return (
-        <div>
-            <div className="row">
+        <div className="p-5">
+            <div className="row about-header p-2 m-5 ">
                 <AboutHeader></AboutHeader>
             </div>
             <br/>
-            <div className="row">
+            <div className="row p-5">
                 <Skills></Skills>
             </div>
         </div>
