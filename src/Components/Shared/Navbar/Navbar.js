@@ -19,7 +19,7 @@ const Navbar = () => {
               <Link className=" p-3 my-nav-link" to='/projects'> <FontAwesomeIcon icon={faFileCode}></FontAwesomeIcon> Projects</Link>
               <Link className=" p-3 my-nav-link" to='/blog'> <FontAwesomeIcon icon={faBlog}></FontAwesomeIcon> Blog</Link>
               <Link className="p-3 my-nav-link" to='/contact'> <FontAwesomeIcon icon={faIdCard}></FontAwesomeIcon> Contact</Link>
-              <a className=" p-3 my-resume-btn text-white text-decoration-none" href='../../../file/Shihab_Ahmed_Efty_Resume.pdf' download> <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download Resume</a>
+              <a className=" p-3 my-resume-btn text-white text-decoration-none" href='https://drive.google.com/file/d/1pWejGsfB6Kfi3-D1nFmAE-HB2om8NMa2/view?usp=sharing' target='_blank' download> <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download Resume</a>
             </div>
           </div>
         </div>
