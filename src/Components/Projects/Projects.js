@@ -58,6 +58,9 @@ const Projects = () => {
         <div className="my-bg">
             
             <h1 className="text-center p-2 projects-title"><em>Here is my all projects</em></h1>
+            {
+                projects.length ? '' : <p className="text-white text-center">Loding...</p>
+            }
             <div className="d-flex justify-content-center row p-5">
                 {
                     projects.map(project => <Project key={project._id} project={project} ></Project> )

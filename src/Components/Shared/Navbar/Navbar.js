@@ -1,5 +1,5 @@
 import { faFileCode } from '@fortawesome/free-regular-svg-icons';
-import { faBlog, faDownload, faIdCard, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faBlog, faDownload, faIdCard, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -9,8 +9,8 @@ const Navbar = () => {
         <nav className="navbar  navbar-expand-lg navbar-light my-navbar ">
         <div className="container-fluid">
           <Link style={{ color:'white', fontSize: '32px', fontFamily: 'monospace' }} className="navbar-brand p-2" to='/'>Shihab</Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+          <button className="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon text-white"> <FontAwesomeIcon icon={faBars}></FontAwesomeIcon> </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ms-auto ">
