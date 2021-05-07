@@ -59,7 +59,7 @@ const Projects = () => {
             
             <h1 className="text-center p-2 projects-title"><em>Here is my all projects</em></h1>
             {
-                projects.length ? '' : <p className="text-white text-center">Loding...</p>
+                projects.length ? '' : <p className="text-white text-center"><img src="https://worthit.in/miipl_website/static/src/img/loading2.gif" alt="" /></p>
             }
             <div className="d-flex justify-content-center row p-5">
                 {
