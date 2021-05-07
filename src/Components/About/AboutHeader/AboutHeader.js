@@ -1,7 +1,6 @@
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../About.css';
 const AboutHeader = () => {
     return (
@@ -16,7 +15,7 @@ const AboutHeader = () => {
                 </span>
                 <p className="text-white">I count myself as a creative and hardworking person and a passionate web developer</p>
                 <br />
-                <Link class="my-btn p-3 text-white text-decoration-none" to="/contact">Contact Me</Link>
+                {/* <Link class="my-btn p-3 text-white text-decoration-none" to="/contact">Contact Me</Link> */}
                 <a className="p-3 my-resume-btn text-white text-decoration-none m-2" href='https://drive.google.com/file/d/1pWejGsfB6Kfi3-D1nFmAE-HB2om8NMa2/view?usp=sharing' target='_blank' download> <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download Resume</a>
             </div>
         </section>

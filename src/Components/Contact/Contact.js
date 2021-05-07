@@ -2,8 +2,7 @@ import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../Shared/Navbar/Navbar';
-import './Contact.css'
+import './Contact.css';
 const Contact = (props) => {
     console.log(props)
     const sendEmail = e => {

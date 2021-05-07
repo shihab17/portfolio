@@ -2,8 +2,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  useHistory
+  Route
 } from "react-router-dom";
 import About from './Components/About/About';
 import Home from './Components/Home/Home';
@@ -16,16 +15,8 @@ import Navbar from './Components/Shared/Navbar/Navbar';
 import SocialButtons from './Components/Shared/SocialButtons/SocialButtons';
 import Footer from './Components/Shared/Footer/Footer';
 import ProjectDetails from './Components/ProjectDetails/ProjectDetails';
-import { useState } from 'react';
 function App() {
-  const [project, setProject] = useState({})
-  let history = useHistory();
-  const handleTitle = project => {
-    setProject(project)
-    history.push("/home");
-    console.log(project)
-  }
-  
+
   return (
     <Router>
       <Switch>
@@ -41,7 +32,7 @@ function App() {
         <Route path='/projects'>
           <Navbar></Navbar>
           <SocialButtons></SocialButtons>
-          <Projects handleTitle={handleTitle}></Projects>
+          <Projects></Projects>
           <Footer></Footer>
         </Route>
         <Route path='/blog'>
@@ -52,8 +43,8 @@ function App() {
           <Contact></Contact>
           <Footer></Footer>
         </Route>
-        <Route path='/projectDetails'>
-          <ProjectDetails project={project}></ProjectDetails>
+        <Route path='/projectDetails/:projectId'>
+          <ProjectDetails></ProjectDetails>
         </Route>
         <Route path='/p5js'>
           <PFiveJS></PFiveJS>
