@@ -23,7 +23,7 @@ const ProjectDetails = () => {
     }, [])
     const { _id, img, img1, img2, title, source, live } = project;
     return (
-        <div className="my-bg projectDetails-bg">
+        <div className="my-bg">
             <Navbar></Navbar>
             <SocialButtons></SocialButtons>
             <section>
@@ -75,7 +75,7 @@ const ProjectDetails = () => {
                     <div className="col-md-5 p-5 text-white">
                         <h3 className="">{title}</h3>
                         <div className="p-3">
-                            <h5 style={{ color: '#14A76C' }}>Features:</h5>
+                            <h5 style={{ color: '#3DEAA4' }}>Features:</h5>
                             <ul>
                                 {
                                     features.map(feature => <li><p>{feature}</p></li>)
@@ -83,7 +83,7 @@ const ProjectDetails = () => {
                             </ul>
                         </div>
                         <div className="p-3">
-                            <h5 style={{ color: '#14A76C' }}>Technology Used:</h5>
+                            <h5 style={{ color: '#3DEAA4' }}>Technology Used:</h5>
                             <ul>
                                 {
                                     technology.map(tec => <li>{tec}</li>)

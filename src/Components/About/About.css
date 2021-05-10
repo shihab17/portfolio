@@ -1,22 +1,25 @@
 .about-header {
-    height: 500px;
+    height: 600px;
     width: 100%;
-    padding: 5%;
-    background-image: url('https://pa1.narvii.com/7407/3c1f595cd4dbc27edf08e74548d48158a747d205r1-444-480_hq.gif');
+    /* background-image: url('https://pa1.narvii.com/7407/3c1f595cd4dbc27edf08e74548d48158a747d205r1-444-480_hq.gif'); */
     /* opacity: 0.75; */
     /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://pa1.narvii.com/7407/3c1f595cd4dbc27edf08e74548d48158a747d205r1-444-480_hq.gif"); */
-    background-repeat: repeat-y;
-    background-position: right;
+    /* background-repeat: repeat-y;
+    background-position: right; */
 }
 
 .hello {
-    color: #078f07;
+    color: #FFFFFF;
 }
 .tools-heading{
   /* color:#14A76C; */
-  color: #FFE400;
+  color: #3DEAA4;
 }
-.name-animation {
+.my-tittle{
+  color: #A5A4A6;
+}
+
+/* .name-animation {
     color: cornflowerblue;
     position: relative;
     font-family: sans-serif;
@@ -53,4 +56,4 @@
   100% {
     background-position: 500%;
   }
-}
+} */

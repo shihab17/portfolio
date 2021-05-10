@@ -8,3 +8,9 @@
 .skill-logo:hover{
     transform: scale(2);
 }
+.my-progress-bar{
+    background-color: #3DEAA4;
+  }
+.my-progress{
+    height: 8px;
+}

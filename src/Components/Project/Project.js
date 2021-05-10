@@ -19,14 +19,14 @@ const Project = (props) => {
                 <img className="card-img-top p-2 project-image" src={img} onClick={() => handleProject(_id)} alt="image" />
                 <div className="card-body rounded text-white">
                     <h3 className="card-title text-white" onClick={() => handleProject(_id)}>{title}</h3>
-                    <p className="card-body" onClick={() => handleProject(_id)}>{description}</p>
+                    <p className="card-body" onClick={() => handleProject(_id)}>{description} <span className="text-primary">Click here.....</span> </p>
                 </div>
                 <div className="row p-2">
                     <div className="col-6 d-flex justify-content-center">
-                        <button className="my-btn p-3"> <a className="text-decoration-none text-white " href={live} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faEye}></FontAwesomeIcon> Live</a> </button>
+                        <button className="my-btn p-3"> <a className="text-decoration-none my-btn-color " href={live} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faEye}></FontAwesomeIcon> Live</a> </button>
                     </div>
                     <div className="col-6 d-flex justify-content-center">
-                        <button className="my-btn p-3"> <a className="text-decoration-none text-white" href={source} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Code</a> </button>
+                        <button className="my-btn p-3"> <a className="text-decoration-none my-btn-color" href={source} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> Code</a> </button>
                     </div>
                 </div>
             </div>

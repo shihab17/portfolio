@@ -4,14 +4,19 @@
     border-radius: 0;
     font-size: large;
     font-weight: 700;
+    background-color: #111318;
+    color: #3DEAA4;
 }
 .contact-info{
-    border-right: 1px solid greenyellow ;
+    border-right: 1px solid #3DEAA4 ;
 }
 .my-bg{
     /* background-image: linear-gradient(-12deg,rgb(7, 143, 7),rgba(157, 221, 74, 0.726)); */
     /* background-color: #14A76C; */
 }
 .my-color{
-    color: #747474;
+    color: white;
+}
+.my-info{
+    color: #3DEAA4;
 }

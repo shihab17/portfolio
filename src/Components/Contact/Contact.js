@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import './Contact.css';
+import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 const Contact = (props) => {
     console.log(props)
     const sendEmail = e => {
@@ -26,31 +27,32 @@ const Contact = (props) => {
                 <div className="col-md-5 contact-info">
                     <h3 className="p-3 my-color">Contact Information</h3><hr />
                     <h5 className="p-3">
-                        <span className="p-3 my-color">Name</span> <br />  <Link className="text-decoration-none p-3 " to="/">SHIHAB AHMED EFTY</Link> <br /> <br />
-                        <span className="p-3 my-color">Email me</span> <br /> <a className="text-decoration-none p-3 " href="mailto:shihabahmed620@gmail.com">shihabahmed620@gmail.com</a> <br /><br />
-                        <span className="p-3 my-color">Call me</span> <br /> <a className="text-decoration-none p-3" href="tel:+8801533908624">+88 01533908624</a> <br />
+                        {/* <span className="p-3 my-color">Name</span> <br />  <Link className="text-decoration-none p-3 my-info" to="/">SHIHAB AHMED EFTY</Link> <br /> <br /> */}
+                        <span className="p-1 my-info"> <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> </span> <a className="text-decoration-none my-color" href="mailto:shihabahmed620@gmail.com">shihabahmed620@gmail.com</a> <br /><br />
+                        <span className="p-1 my-info"> <FontAwesomeIcon icon={faMobileAlt}></FontAwesomeIcon> </span><a className="text-decoration-none my-color" href="tel:+8801533908624">+88 01533908624</a> <br />
                     </h5>
                 </div>
                 <div className="col-md-7">
-                    <h3 className="p-3 my-color">Message Me</h3>
+                    <h3 className="p-3 my-color">Get in Touch</h3>
                     <hr />
                     <form className="p-3" action="" onSubmit={sendEmail}>
                         <div className="row">
                             <div className="col-12 col-md-6 form-group">
-                                <input className="form-control contact-input bg-dark text-white" type="text" name="name" id="name"  placeholder="Name" required />
+                                <input className="form-control contact-input" type="text" name="name" id="name"  placeholder="Name" required />
                             </div>
                             <div className="col-12 col-md-6 form-group">
-                                <input className="form-control contact-input bg-dark text-white " type="email" name="email" id="email"  placeholder="Email" required />
+                                <input className="form-control contact-input " type="email" name="email" id="email"  placeholder="Email" required />
                             </div>
                         </div>
                         <div className="col-12 form-group">
-                            <input className="form-control contact-input bg-dark text-white " type="text" name="subject" id="subject" placeholder="Subject" required />
+                            <input className="form-control contact-input " type="text" name="subject" id="subject" placeholder="Subject" required />
                         </div>
                         <div className="col-12 form-group">
-                            <textarea className="form-control contact-input bg-dark text-white " name="message" id="message" rows="5" placeholder="Message"></textarea>
+                            <textarea className="form-control contact-input " name="message" id="message" rows="5" placeholder="Message"></textarea>
                         </div>
+                        <br />
                         <div className="col-12">
-                            <button className="btn btn-lg my-btn p-3 text-white"> <FontAwesomeIcon icon={faTelegramPlane}></FontAwesomeIcon> Send</button>
+                            <button className="btn btn-lg my-btn p-3 my-btn-color"> <FontAwesomeIcon icon={faTelegramPlane}></FontAwesomeIcon> Send</button>
                         </div>
                     </form>
                 </div>

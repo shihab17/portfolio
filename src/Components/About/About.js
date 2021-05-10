@@ -2,6 +2,7 @@ import React from 'react';
 import AboutHeader from './AboutHeader/AboutHeader';
 import './About.css';
 import Skills from '../Skills/Skills';
+import Education from '../Education/Education';
 const About = () => {
     return (
         <div className="p-5 my-bg">
@@ -11,6 +12,9 @@ const About = () => {
             <br/>
             <div className="row p-5">
                 <Skills></Skills>
+            </div>
+            <div className="row p-5">
+                <Education></Education>
             </div>
         </div>
     );

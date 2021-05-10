@@ -2,24 +2,35 @@
 .project-card{
     overflow: hidden;
     /* background-image: linear-gradient(45deg,rgb(7, 143, 7),rgba(157, 221, 74, 0.726)); */
-    background-color: #14A76C;
+    background-color: #111318;
     font-size: large;
 }
-.project-card :hover{
+/* .project-card :hover{
     transform:scale(1.05);
     transition: transform 2s;
-}
+} */
 .project-image:hover{
     transform: scale(1.2);
     transition: transform 2s;
 }
 .my-btn {
     /* background-image: linear-gradient(45deg,rgb(7, 143, 7),rgba(157, 221, 74, 0.726)); */
-    background-color: rgb(128,128,128);
+    background-color: #3DEAA4;
     border-radius: 20px; 
-    font-size: large;
+    font-size: large; 
 }
 .my-btn:hover{
+    background-color: black;
+    transition: background-color 2s;
+}
+.my-btn-color{
+    color:#111318;
+}
+.my-btn-color:hover{
+    color: white;
+    transition: color 2s;
+}
+/* .my-btn:hover{
     transform:skew(15deg);
     transition: transform 1s;
-}
+} */
