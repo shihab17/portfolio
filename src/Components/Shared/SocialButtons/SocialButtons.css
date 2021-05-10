@@ -1,0 +1,9 @@
+.social-color {
+    color: #3DEAA4;
+}
+.social-color:hover{
+    color: white;
+    transform: rotate(360deg);
+    transition:color 2s, transform 3s;
+    /* transition: transform 2s; */
+}

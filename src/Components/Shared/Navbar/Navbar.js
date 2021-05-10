@@ -9,8 +9,8 @@ const Navbar = () => {
         <nav className="navbar sticky-top navbar-expand-lg navbar-light my-navbar ">
         <div className="container-fluid">
           <Link style={{ color:'white',fontFamily: 'monospace' }} className="navbar-brand p-2" to='/'>Shihab Ahmed</Link>
-          <button className="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon text-white"> <FontAwesomeIcon icon={faBars}></FontAwesomeIcon> </span>
+          <button className="navbar-toggler "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon " style={{ color: '#3DEAA4' }}> <FontAwesomeIcon icon={faBars}></FontAwesomeIcon> </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ms-auto ">
